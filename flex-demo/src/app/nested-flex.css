@@ -1,0 +1,47 @@
+
+/*flexbox*/
+
+.container{
+    background: white;
+    margin: 50px; /*outer space |*/
+    padding: 0px; /*inner space |*/
+    border: 3px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*child property
+
+*/
+
+.items{
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    height: 100px;
+ 
+
+}
+
+.item-1{background: orange;flex: 1 }
+.item-2{background: yellowgreen; display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+.item-2 > .subitem {
+    background: white;
+    color:mediumpurple ;
+    flex-grow: 1;
+    margin: 1px;
+
+}
+
+.item-3{background: mediumpurple; flex: 1 }
+.item-4{background: hotpink; flex: 1 }
+
+
